@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager™</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            padding: 30px;
+        }
+        li{
+            cursor: pointer;
+            user-select: none;
+        }
+        li:hover{
+            font-weight: bold;
+        }
+        .taiat{
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "div1">
+        <h1>Task Manager™</h1>
+        <div class = "div2">
+        <input id = "in" type="text" placeholder="New Task">
+        <button id = "submit"> Add </button>
+        </div>
+
+        <h3>TODO: </h3>
+        <ul id="lista" type="none">
+            <li> <input type="checkbox"> Task</li>
+            <li> <input type="checkbox"> Task</li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(()=>{
+            let submit = ()=>{
+                let text = $("#in").val();
+                $("#in").val("");
+                let nou = $(`<li> <input type = "checkbox"> ${text} </li>`);
+              //  nou.click(()=>nou.toggleClass("taiat"))
+                $("#lista").append(nou);
+            }
+            $("#submit").click(submit);
+            $("#in").keypress((e)=>{
+                if(e.keyCode == 13)
+                    submit();
+            })
+            $("ul").on("click", "li", (e)=>{
+                $(e.target).toggleClass("taiat");
+            } )
+        })
+    </script>
+</body>
+</html>

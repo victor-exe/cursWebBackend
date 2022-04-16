@@ -1,0 +1,35 @@
+body{
+    margin-top: 90px;
+}
+
+nav{
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.25); 
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.25);
+    width: 97%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+footer{
+    width: 97%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.6); 
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.6);
+}
+
+.card.h-100{
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.12); 
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.12);
+}
+
+.carousel.slide{
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2); 
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.2);
+}
+
+.carousel-control{
+    border-radius: 100px;
+}

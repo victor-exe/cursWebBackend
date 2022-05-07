@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="joinWindow">
+        <div class="content">
+            <img class="avatar" alt="">
+            <input id="iname" type="text">
+            <button id="joinbut">Join</button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="chatarea">
+            <div class="msg">
+                <img src="https://avatars.dicebear.com/api/big-ears-neutral/fng.svg" alt="">
+                <div class="message">
+                    <h5 class="from">Sender1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil voluptates quae, rerum autem est sint voluptatem inventore sit ab. Dolore consequatur expedita odit inventore, ullam consequuntur ipsam similique deserunt.</p>
+                </div>
+            </div>
+            <div class="message me">
+                <h5 class="from">You</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut repudiandae fugiat, eligendi saepe tempora odit pariatur hic accusantium iste molestiae cupiditate autem incidunt tempore voluptatibus sed unde sint. Laboriosam.</p>
+            </div>
+        </div>
+        <div class="apanel">
+            <input type="text" id="tinput" placeholder="  Send a Message">
+            <button id="sbutton">Send</button>
+        </div>
+    </div>
+</body>
+</html>

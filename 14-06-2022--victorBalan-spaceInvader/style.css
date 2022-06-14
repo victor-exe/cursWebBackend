@@ -1,0 +1,42 @@
+.gameMap{
+    margin: auto;
+    height: 80vh;
+    max-width: 800px; 
+    background-image: url('assets/background.jpg');
+    background-repeat: repeat;
+    position: relative;
+}
+
+.gameMap>*{
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    background-repeat: none;
+    background-size: contain;
+}
+
+.enemy, .ally{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.player{
+    height: 100px;
+}
+
+.bullet{
+    height: 50px;
+    width: 50px;
+    background-image: url('assets/bullet.png');
+}
+
+.enemy{
+    background-image: url('assets/goblin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ally{
+    background-image: url('assets/goblin2.png');
+}
